@@ -2,10 +2,6 @@
 
 # useEffect e ciclos de vida React
 
-![](https://i.imgur.com/xG74tOh.png)
-
-# useEffect e ciclos de vida React
-
 ## Exercícios de classe 🏫
 
 1. **Exercício 1** - Trata-se de criar modal simples, com a funcionalidade de abrir e fechar..
