@@ -2,6 +2,10 @@
 
 # useEffect e ciclos de vida React
 
+![](https://i.imgur.com/xG74tOh.png)
+
+# useEffect e ciclos de vida React
+
 ## Exercícios de classe 🏫
 
 1. **Exercício 1** - Trata-se de criar modal simples, com a funcionalidade de abrir e fechar..
@@ -43,6 +47,27 @@ Veja na imagem abaixo o layout:
 ![](https://i.imgur.com/2LQjcRT.png)
 
 
+4. **Exercício 4** - Criar uma listagem de tarefas com id, nome e feito, os dados iniciais devem ser carregados na primeira renderização usando useEffect e exibir uma mensagem 'dados inciais carregados', ao clicar no botão 'importar dados' dados adicionais devem ser acrescentados no lista de tarefas o botão deve ficar inativo (use a propriedade disabled do btn) usar useEffect para verificar exibir a mensagem e inativar os botões
+
+Lembre-se
+
+```js
+// executa na primeira renderização
+useEffect(() => {
+    //codigo aqui
+}, [])
+
+// executa quando o 'valor' é alterado
+useEffect(() => {
+    //codigo aqui
+}, [valor])
+
+// executa quando o component é desmontado
+useEffect(() => {
+    return () => {
+        //codigo aqui
+    }
+}, [])
 ---
     
 
@@ -90,4 +115,5 @@ Preencha a checklist para fazer os exercícios:
 -   [ ] Copiar a url do seu fork e enviar na plataforma
 
 ###### tags: `módulo 3` `front-end` `React`
+
 
