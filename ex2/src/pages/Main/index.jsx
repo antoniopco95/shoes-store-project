@@ -8,10 +8,9 @@ function Main() {
 
   useEffect(() => {
     if (notification) {
-      const timer = setTimeout(() => {
+      setTimeout(() => {
         setNotification("");
       }, 2000);
-      return clearTimeout(timer);
     }
   }, [notification]);
 
