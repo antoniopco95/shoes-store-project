@@ -5,6 +5,7 @@
   align-items: center;
   width: 322px;
   height: 478px;
+  cursor: pointer;
 }
 
 .card img {
@@ -13,7 +14,7 @@
 }
 
 .price-wrap {
-  width: 163px;
+  width: 183px;
   height: 26px;
   display: flex;
   flex-direction: row;

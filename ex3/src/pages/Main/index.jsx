@@ -4,10 +4,20 @@ import Face from "../../assets/facebook.svg";
 import Insta from "../../assets/instagram.svg";
 import Cards from "../../components/Cards";
 import Datas from "../../data";
+import Modal from "../../components/Modal";
 import { useState } from "react";
 
 function Main() {
-  const [openModal, setOpenModal] = useState(false);
+  const [modal, setModal] = useState(null);
+
+  const handleOpenCloseModal = (informations) => {
+    if (!modal) {
+      setModal(informations);
+      return;
+    }
+    setModal(null);
+  };
+  console.log(modal);
   return (
     <div className="container">
       <header>
@@ -17,15 +27,9 @@ function Main() {
       </header>
       <div className="cards-container">
         {Datas.map((data) => (
-          <Cards
-            key={data.id}
-            img={data.image}
-            description={data.description}
-            oldPrice={data.oldPrice}
-            currentPrice={data.currentPrice}
-            onclick={() => setOpenModal(true)}
-          />
+          <Cards key={data.id} data={data} onclick={handleOpenCloseModal} />
         ))}
+        {modal && <Modal data={modal} onclick={handleOpenCloseModal} />}
       </div>
       <footer>
         <div className="endereço">
