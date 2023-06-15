@@ -30,7 +30,6 @@ function Main() {
       <div className="left">
         <input type="text" placeholder="Nome" onChange={handleChangeInput} />
         <button onClick={handleAddUser}>Adicionar</button>
-        {notification && <p>{notification}</p>}
       </div>
       <div className="right">
         <h1>Usuários</h1>
@@ -42,6 +41,7 @@ function Main() {
           </ul>
         </div>
       </div>
+      {notification && <p>{notification}</p>}
     </div>
   );
 }
