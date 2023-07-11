@@ -1,5 +1,4 @@
 import "./style.css";
-import Modal from "../Modal";
 
 function Cards({ data, onclick }) {
   return (
